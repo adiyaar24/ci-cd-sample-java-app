@@ -4,4 +4,16 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <filter>
+   <filter-name>AWSXRayServletFilter</filter-name>
+   <filter-class>com.amazonaws.xray.javax.servlet.AWSXRayServletFilter</filter-class>
+   <init-param>
+     <param-name>fixedName</param-name>
+     <param-value>ci-cd-sample-java-app</param-value>
+   </init-param>
+ </filter>
+ <filter-mapping>
+   <filter-name>AWSXRayServletFilter</filter-name>
+   <url-pattern>*</url-pattern>
+ </filter-mapping>
 </web-app>
