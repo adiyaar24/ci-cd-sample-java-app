@@ -4,8 +4,7 @@
 
     <head>
         <title>Enter two numbers to add up</title>
-    </head>
-    
+    </head>    
     <body>
         <form action="./add.jsp">
             First number: <input type="text" name="t1"/>
