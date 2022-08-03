@@ -3,12 +3,12 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto11
+      java: corretto111
   post_build:
     commands:
       - mvn package
-      - mv target/ROOT.war ROOT.war
+      - mv target/ROOT.jar ROOT.jar
 artifacts:
   files:
-    - ROOT.war
+    - ROOT.jar
     - .ebextensions/**/*
